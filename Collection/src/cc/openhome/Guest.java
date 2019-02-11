@@ -28,7 +28,7 @@ public class Guest {
 	
 	static void printUpperCase(List names) {
 		for(int i=0;i<names.size();i++) {
-			String name = (String)names.get(i);
+			String name = (String)names.get(i);  //使用get()依索引取得收集之物件
 			System.out.println(name.toUpperCase());
 		}
 	}
