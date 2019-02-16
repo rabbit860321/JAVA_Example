@@ -1,5 +1,7 @@
 package cc.openhome;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class WordCount {
@@ -10,7 +12,6 @@ public class WordCount {
 		System.out.print("請輸入英文:");
 		Set words = tokenSet(console.nextLine());
 		System.out.printf("不重複單字有 %d 個:%s\n", words.size(),words);
-
 	}
 	static Set tokenSet(String line) {
 		String[] tokens = line.split(" "); //根據空白切割字串
